@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oxygen Requirement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .input-field {
+            margin-bottom: 15px;
+        }
+        #calculateBtn {
+            display: none;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>O<sub>2</sub> Requirement</h1>
+    <div class="input-field">
+        <label for="input1">FiO<sub>2</sub>:</label>
+        <input type="number" id="input1" oninput="checkInputs()">
+    </div>
+    <div class="input-field">
+        <label for="input2">Edad:</label>
+        <input type="number" id="input2" oninput="checkInputs()">
+    </div>
+    <div class="input-field">
+        <label for="input3">PO<sub>2</sub></label>
+        <input type="number" id="input3" oninput="checkInputs()">
+    </div>
+    <div class="input-field">
+        <label for="input4">PCO<sub>2</sub>:</label>
+        <input type="number" id="input4" oninput="checkInputs()">
+    </div>
+    <button id="calculateBtn" onclick="allFieldsFilled()">Calculate</button>
+
+    <div id="result"></div>
+
+    <div id="outcome"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
